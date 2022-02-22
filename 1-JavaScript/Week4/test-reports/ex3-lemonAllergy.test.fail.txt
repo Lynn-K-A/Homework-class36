@@ -1,0 +1,12 @@
+
+*** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  29:10  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+  41:13  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+  53:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+  54:14  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+  65:14  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+
+✖ 5 problems (5 errors, 0 warnings)
+

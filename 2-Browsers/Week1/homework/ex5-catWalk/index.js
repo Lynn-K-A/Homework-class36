@@ -26,7 +26,7 @@ catEl.style.left = "0px";
 const startTime = new Date().getTime();
 function catWalk() {
    const currTime = new Date().getTime();
-   const secondsElapsed = (10+(currTime - startTime)/1000*20);
+   const secondsElapsed = ((currTime - startTime)/1000*20);
    const newLeft = secondsElapsed + 10;
    catEl.style.left = newLeft + "px";
   if (newLeft <=0 || newLeft < 700 ){
@@ -39,4 +39,4 @@ function catWalk() {
 }
 
 // TODO execute `catWalk` when the browser has completed loading the page
-catWalk();
+window.addEventListener('load', (catWalk));

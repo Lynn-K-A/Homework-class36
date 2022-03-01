@@ -20,3 +20,4 @@ document.getElementById("clock").textContent = time;
 }
 
 const timer = window.setInterval(addCurrentTime, 1000);
+window.addEventListener('load', (timer));

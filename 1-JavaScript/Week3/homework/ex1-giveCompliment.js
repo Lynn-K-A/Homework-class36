@@ -31,9 +31,8 @@ function giveCompliment(name) {
     'intellectual',
     'sophisticated',
   ];
-  const random = Math.floor(Math.random() * 10);
-  //('You are ' + compliments[random] + ' ' + name + '!');
-  return 'You are ' + compliments[random] + ', ' + name + '!';
+  const random = Math.floor(Math.random() * compliments.length);
+  return `You are ${compliments[random]}, ${name}!`;
 }
 
 function main() {

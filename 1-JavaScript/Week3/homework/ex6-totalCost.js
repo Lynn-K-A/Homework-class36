@@ -29,10 +29,9 @@ const cartForParty = {
   cheese: 5,
 };
 
-function calculateTotalPrice(obj) {
+function calculateTotalPrice(cartObj) {
   // TODO replace this comment with your code
-  const sumValues = Object.values(obj).reduce((a, b) => a + b);
-  console.log(`Total: €${sumValues}`);
+  const sumValues = Object.values(cartObj).reduce((a, b) => a + b);
   return `Total: €${sumValues}`;
 }
 
@@ -48,7 +47,9 @@ function test1() {
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   // TODO replace this comment with your code
-  return calculateTotalPrice(cartForParty);
+const expected = "Total: €52.9";
+const actual = calculateTotalPrice(cartForParty);
+console.assert(actual === expected);
 }
 
 function test() {

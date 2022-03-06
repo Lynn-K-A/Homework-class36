@@ -1,12 +1,28 @@
+*** Unit Test Error Report ***
 
-*** ESLint Report ***
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (7 ms)
+    √ should not modify the original `fruitBasket` array (4 ms)
+    × should return a new array that does not include the unwanted `lemon` (2 ms)
 
-ex3-lemonAllergy.test.js
-  29:10  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
-  41:13  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
-  53:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
-  54:14  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
-  65:14  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
 
-✖ 5 problems (5 errors, 0 warnings)
+    TypeError: sanitizeFruitBasket(...).toStrictEqual is not a function
 
+      63 |   ];
+      64 |     // TODO replace next line with your code
+    > 65 |     expect(sanitizeFruitBasket(fruitBasket,'lemon').toStrictEqual(newFruitBasketContent));
+         |                                                     ^
+      66 |   });
+      67 | });
+      68 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:65:53)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.807 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.

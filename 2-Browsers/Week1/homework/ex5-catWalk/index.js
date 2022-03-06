@@ -24,8 +24,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 const catEl = document.querySelector("img");
 catEl.style.left = "0px";
 let newLeft = 0;
-const ww = window.innerWidth; 
-
+const ww = window.screen.width; 
 
 function catWalk() {
 catEl.src="http://www.anniemation.com/clip_art/images/cat-walk.gif";

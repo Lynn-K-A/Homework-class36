@@ -10,13 +10,9 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 `doubleEvenNumbers`.
 ------------------------------------------------------------------------------*/
 // ! Function to be tested
-function doubleEvenNumbers(numbers) {
-  const newNumbers = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      newNumbers.push(numbers[i] * 2);
-    }
-  }
+function doubleEvenNumbers(numbersArr) {
+  const newNumbers = numbersArr.filter(x => x % 2 === 0)
+                               .map(x=> x*2);
   return newNumbers;
 }
 

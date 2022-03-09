@@ -52,6 +52,6 @@ describe('sanitizeFruitBasket', () => {
     'watermelon',
   ];
     // TODO replace next line with your code
-    expect(sanitizeFruitBasket(fruitBasket,'lemon').toBe(newFruitBasketContent));
+    expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toStrictEqual(newFruitBasketContent);
   });
 });

@@ -16,7 +16,7 @@ favFoodEl.textContent = "Butter Chicken";
 const homeTownEl = document.getElementById('hometown');
 homeTownEl.textContent = "Damascus";
 
-const lists = document.getElementsByTagName("ul");
+const lists = document.getElementsByTagName("li");
 for (let i = 0; i < lists.length; i++){
    lists[i].classList.add('list-item');
 }

@@ -23,14 +23,14 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 -----------------------------------------------------------------------------*/
 const catEl = document.querySelector("img");
 catEl.style.left = "0px";
-let newLeft = 0;
-const ww = window.screen.width; 
+let newLeft = -catEl.width;
+const ww = window.innerWidth; 
 
 function catWalk() {
 catEl.src="http://www.anniemation.com/clip_art/images/cat-walk.gif";
 catEl.style.left = newLeft + "px";
 
-if (newLeft >= ww / 2){
+if (newLeft >= (ww - catEl.width)/ 2){
    catEl.src = "https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif"
    const myTimeout = setTimeout(() => {   
       (newLeft += 10)

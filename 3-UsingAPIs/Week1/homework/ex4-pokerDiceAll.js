@@ -27,9 +27,10 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+
+  const newDice = dice.map((x) => rollDie(1));
+  return Promise.all(newDice);
 }
 
 function main() {
@@ -43,3 +44,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+
+//because all promises must run and finish the cycle first before the rejected output
